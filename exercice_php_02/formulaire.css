@@ -1,0 +1,8 @@
+form{
+    border: 1px solid;
+    width: 15%;
+    padding: 15px;
+}
+/*$resultat = $pdoREPERTOIRE -> exec("INSERT INTO annuaire (nom, prenom, telephone, profession, ville, codepostal, adresse, date_de_naissance, sexe, description) VALUES('$nom', $prenom, $telephone, $profession, $ville, $cp, $adresse, $date_naissance, $sexe, $description");*/
+
+/*$resultat = $pdoREPERTOIRE -> exec("INSERT INTO annuaire (nom, prenom, telephone, profession, ville, codepostal, adresse, date_de_naissance, sexe, description) VALUES($_POST['nom'], $_POST['prenom'], $_POST['telephone']*/
