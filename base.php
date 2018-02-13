@@ -190,7 +190,7 @@ if($a == 9 || $b >  $c){ // si A contient la valeur 9 OU B est supérieur à C
 // FALSE || FALSE ===> FALSE
 
 // -- XOR
-if($a == 10 XOR $b == 6){ // Si SOIT A contient la valeur 10 OU SOIT B contient al valeur 6 (condition exclusive) Il faut qu'il y en ai un VRAI et un FAUX
+if($a == 10 OR $b == 6){ // Si SOIT A contient la valeur 10 OU SOIT B contient al valeur 6 (condition exclusive) Il faut qu'il y en ai un VRAI et un FAUX
     echo 'OK pour seulement l\'une des deux conditions <br>';
 }
 // TRUE XOR TRUE ===> FALSE

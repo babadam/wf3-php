@@ -1,22 +1,20 @@
-/**************************************************** GENERAL ************************************************/
+﻿/**************************************************** GENERAL ************************************************/
 *{ margin: 0; }
 body{ font-family : verdana; font-size: 12px; }
 a{ text-decoration: none; color: #000; }
-.conteneur{ margin: 0 auto; max-width: 1170px; }
-
+.conteneur{ margin: 0 auto; max-width: 1170px; overflow: hidden; }
 /**************************************************** HAUT ************************************************/
-header { background: DARKSLATEGRAY; padding: 5px; text-align: center; }
+header { background: #000000; padding: 5px; text-align: center; }
 header  span{ color: #fff; font-weight: bold; text-transform: uppercase; margin-right: 5%; }
 header  nav{ display: inline; }
 header  a{ color: #ffffff; text-decoration: none; padding: 5px 5px; }
-header  nav  a:hover, a.active{ background: mistyrose; color: black; }
+header  nav  a:hover, a.active{ background: #04baf6; }
 /**************************************************** MILIEU ************************************************/
-section{ padding: 30px; min-height: 800px;}
-
+section{ padding: 30px; min-height: 800px; }
 /**************************************************** BAS ************************************************/
 footer{ background: #000; color: white; text-align: center; padding: 7px 0;}
 /**************************************************** GENERAL ************************************************/
-.erreur{background: indianred; padding: 10px; margin: 5px; border-radius: 10px; text-align: center; width: 68.5%; color: white; float: right; margin-right: 5%;}
+.erreur{ background: #ff0000; padding: 5px; margin: 5px; color: white;}
 .validation{ background: #669933; padding: 5px; margin: 5px; }
 .cadre{ border: 1px solid #c0c0c0; width: 30%;}
 .cadre  h2{ background: #c0c0c0; margin: 0; text-align: center; font-size: 15px; padding: 5px; }
@@ -43,35 +41,37 @@ footer{ background: #000; color: white; text-align: center; padding: 7px 0;}
 
 /**************************************************** Formulaire ************************************************/
 form{
-	margin-top: 70px;
+	margin-top: 20px; 
 	padding: 20px;
+	background : #c9bfbf4d;
 	overflow: hidden;
-	border-radius: 30px;
-	box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-	background: url(../img/pink_rice.png) repeat;
+	width: 50%;
 }
 
 form label{
-	float: left;
-	width: 25%;
-	height: 40px;
-	line-height: 40px;
-	vertical-align: middle;
+	float: left; 
+	width: 25%; 
+	height: 25px; 
+	line-height: 40px; 
+	vertical-align: middle; 
 	margin-top: 10px;
-	text-align: center;
-	font-size: 170%;
 }
 
 form input, form select, form textarea{
-	float: left;
-	width: 70%;
-	height: 40px;
-	line-height: 40px;
+	float: left; 
+	width: 70%; 
+	height: 25px; 
+	line-height: 40px; 
 	vertical-align: middle;
-	margin-top: 10px;
+	margin-top: 10px;	
 	text-indent: 20px;
 	border: none;
 	border: 1px solid white;
+}
+
+form input{
+	border-radius: 3px;
+	opacity: 0.9;
 }
 
 form input[type='file']{
@@ -81,17 +81,21 @@ form input[type='file']{
 	padding-left: 5%;
 	width:65%;
 	height: 30px;
-	background-color: white;
+	background-color: grey;
 }
 
 form textarea{
-	height: 120px;
+	height: 120px; 
 	resize: none;
-	border: none;
+	border: 1px solid white;
+	border-radius: 3px;
+	opacity: 0.9;
 }
 
-form input:focus{
-	border: 1px solid black;
+form input:focus, form textarea:focus{
+	border: 1px solid #6888f2;
+	box-shadow : 0px 0px 1px #6888f2;
+	opacity: 1;
 }
 
 form input[type='submit']{
@@ -103,33 +107,34 @@ form input[type='submit']:hover{
 }
 
 form input[type="submit"]{
-	border : 2px solid grey;
+	border : 2px solid #2ec298; 
 	background : transparent;
-	color: grey;
-	font-weight: bold;
-	border-radius : 3px;
+	color: #2ec298;
+	font-weight: bold;	
+	border-radius : 3px; 
 	padding: 10px;
-	text-align: center;
+	text-align: center; 
 	cursor: pointer;
-	transition: 0.5s;
-	vertical-align: middle;
-	line-height: 20px;
+	transition: 0.5s;	
+	vertical-align: middle; 
+	line-height: 20px; 
 	text-indent: 0px;
-
+	height: 40px;
+	
 }
 
 form input[type="submit"]:hover{
-	background-color: grey;
-	color: white;
+	background-color: #2ec298; 
+	color: white; 
 	transition: 1.5s;
-
+	
 }
 
 table{ border-collapse: collapse;}
 hr{
 	margin: 20px 0;
 }
-h1{margin-bottom: 20px; font-size: 280%;}
+h1{margin-bottom: 20px;}
 table tr td{
 text-align: center;
 }
@@ -138,25 +143,25 @@ td, th{ padding: 5px; }
 /******** PROFIL *******/
 
 .profil{
-	background: mistyrose;
-	padding: 20px;
-	border-radius: 10px;
-	margin-top: 20px;
+	background: silver; 
+	padding: 20px; 
+	border-radius: 10px; 
+	margin-top: 20px; 
 }
-.profil_bienvenue{font-size: 200%;}
+
 .profil ul,
 .profil li{
-	list-style:none;
-	margin: 0;
+	list-style:none; 
+	margin: 0; 
 	padding: 0;
 }
 
 .profil_img{
-	width: 17%;
-	border: 7px solid white;
+	width: 90%;
+	border: 7px solid white; 
 	box-shadow: 0px 3px 5px grey;
 	overflow:hidden;
-
+	
 }
 
 .profil_img img{
@@ -175,13 +180,13 @@ td, th{ padding: 5px; }
 
 
 span.bulle{
-	color: white;
-	text-align: center;
-	width: 15px;
-	height: 16px;
-	border-radius: 15px;
-	line-height: 15px;
-	vertical-align: middle;
+	color: white; 
+	text-align: center; 
+	width: 15px; 
+	height: 16px; 
+	border-radius: 15px; 
+	line-height: 15px; 
+	vertical-align: middle; 
 	background: red;
 	margin-left: 4px;
 	display: inline-block;
@@ -198,32 +203,14 @@ span.bulle{
 }
 
 .notation a.star{
-	height: 15px;
-	width: 15px;
+	height: 15px; 
+	width: 15px; 
 	display: block;
-	float: left;
+	float: left; 
 	margin: 0 2px;
 	background: url(../img/star.png) left top no-repeat;
 	background-size: 15px 15px;
 
-}
-.btn-add{
-	display: block;
-	padding: 3px 10px;
-	border: 3px solid slategray;
-	clear: left;
-	width: 200px;
-	text-align: center;
-	border-radius: 4px;
-	margin-bottom: 10px;
-	position: absolute;
-	right: 100px;
-}
-
-.btn-add:hover{
-	background: slategray;
-	color: white;
-	transition: 0.3s;
 }
 
 .notation a.star:hover {
@@ -231,4 +218,24 @@ span.bulle{
 	background-size: 15px 15px;
 }
 
-/*CSS ajouté par moi-meme*/
+.btn-add{
+	display: block;
+	padding: 3px 10px;
+	border: 3px solid #2ec298;
+	clear: left;
+	width: 200px;
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	position: absolute;
+	right: 100px;
+	color: #2ec298;
+	font-weight: bold;
+}
+
+.btn-add:hover{
+	background: #2ec298;
+	color: white;
+	transition: 0.3s;
+}
+
